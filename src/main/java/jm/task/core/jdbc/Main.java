@@ -14,15 +14,15 @@ public class Main {
 
         UserServiceImpl userService = new UserServiceImpl();
         //userService.createUsersTable();
-        userService.saveUser("2First", "Last", (byte) 14);
+        /*userService.saveUser("2First", "Last", (byte) 14);
         List<User> list = userService.getAllUsers();
         for (User us : list) {
             System.out.println(us.toString());
-        }
+        }*/
         //System.out.println(Util.establishConnection());
         //UserDaoJDBCImpl userDaoJDBC = new UserDaoJDBCImpl();
 
-        //userDaoJDBC.createUsersTable();
+        userService.createUsersTable();
         //userDaoJDBC.saveUser("second", "LastToo", (byte) 15);
         //List<User> list = userDaoJDBC.getAllUsers();
         //userDaoJDBC.removeUserById(1);

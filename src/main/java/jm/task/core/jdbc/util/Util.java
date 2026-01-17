@@ -14,16 +14,13 @@ public class Util {
     private static Connection connection;
     private static Statement statement;
 
-    public static boolean establishConnection() {
+
+    public static Connection getConnection() {
         try {
             connection = DriverManager.getConnection(URL, USER_NAME, PASSWORD);
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-        return true;
-    }
-
-    public static Connection getConnection() {
         return connection;
     }
 
