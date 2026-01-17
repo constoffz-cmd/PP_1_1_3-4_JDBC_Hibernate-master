@@ -60,7 +60,7 @@ public class UserDaoJDBCImpl implements UserDao {
             // Выполнение запроса
             int rowsInserted = pstmt.executeUpdate();
             if (rowsInserted > 0) {
-                logger.info("table removed");
+                logger.info("Пользователь с именем - " + name + " добавлен в базу данных");
                 //System.out.println("Пользователь успешно добавлен!");
             }
         } catch (SQLException e) {
